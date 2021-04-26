@@ -1,6 +1,6 @@
 /*
  * @Date: 2021-04-26 14:00:06
- * @LastEditTime: 2021-04-26 14:56:44
+ * @LastEditTime: 2021-04-26 16:27:02
  * @Description: 
  * @FilePath: /egg-example/config/config.default.js
  */
@@ -27,6 +27,11 @@ module.exports = appInfo => {
     mapping: {
       '.tpl': 'nunjucks',
     },
+  };
+
+  config.news = {
+    pageSize: 5,
+    serverUrl: 'https://hacker-news.firebaseio.com/v0',
   };
 
   // add your middleware config here
