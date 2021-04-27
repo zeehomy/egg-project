@@ -1,6 +1,6 @@
 <!--
  * @Date: 2021-04-26 14:57:53
- * @LastEditTime: 2021-04-26 14:58:03
+ * @LastEditTime: 2021-04-27 10:05:27
  * @Description: 
  * @FilePath: /egg-example/app/view/news/list.tpl
 -->
@@ -14,6 +14,7 @@
       {% for item in list %}
         <li class="item">
           <a href="{{ item.url }}">{{ item.title }}</a>
+          {{ helper.relativeTime(item.time) }}
         </li>
       {% endfor %}
     </ul>
