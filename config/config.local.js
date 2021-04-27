@@ -1,10 +1,10 @@
 /*
- * @Date: 2021-04-26 14:00:06
- * @LastEditTime: 2021-04-27 13:44:26
+ * @Date: 2021-04-27 13:44:45
+ * @LastEditTime: 2021-04-27 13:59:31
  * @Description: 
- * @FilePath: /egg-example/config/config.default.js
+ * @FilePath: /egg-example/config/config.local.js
  */
-/* eslint valid-jsdoc: "off" */
+// only read at development mode, will override default
 
 'use strict';
 
@@ -42,7 +42,6 @@ module.exports = appInfo => {
   // robot's configurations
   config.robot = {
     ua: [
-      /curl/i,
       /Baiduspider/i,
     ]
   };

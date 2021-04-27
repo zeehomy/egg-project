@@ -1,3 +1,9 @@
+/*
+ * @Date: 2021-04-26 14:00:06
+ * @LastEditTime: 2021-04-27 14:22:11
+ * @Description: 
+ * @FilePath: /egg-example/test/app/controller/home.test.js
+ */
 'use strict';
 
 const { app, assert } = require('egg-mock/bootstrap');
@@ -14,7 +20,7 @@ describe('test/app/controller/home.test.js', () => {
   it('should GET /', () => {
     return app.httpRequest()
       .get('/')
-      .expect('hi, egg')
+      .expect('hi, eggss')
       .expect(200);
   });
 });
